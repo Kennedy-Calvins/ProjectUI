@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/graylight"
+    android:weightSum="10"
+    tools:context=".update">
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/endblue">
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:text="JIMBO"
+            android:textColor="@color/graylight"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/graylight"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="38dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:background="@color/graylight"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="Email Address"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"/>
+    <EditText
+        android:id="@id/editText3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/graylight"
+        android:textSize="16dp"
+        android:layout_below="@+id/editText2"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="38dp"
+        android:hint="Phone Number"
+        android:ems="10"
+        />
+
+    <EditText
+        android:id="@id/editText3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/graylight"
+        android:textSize="16dp"
+        android:layout_below="@+id/editText2"
+        android:inputType="date"
+        android:drawableLeft="@drawable/ic_school_black_24dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="38dp"
+        android:hint="School Name"
+        android:ems="10"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:textColor="#fff"
+        android:background="@drawable/buttonstyleithgradient"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="SAVE "/>
+
+
+
+
+
+
+</LinearLayout>
